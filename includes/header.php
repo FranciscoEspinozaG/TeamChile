@@ -14,7 +14,7 @@
 <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
 
-    <?php b4st_navbar_brand();?>
+    <?php //b4st_navbar_brand();?>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
         ) );
       ?>
 
-      <?php b4st_navbar_search();?>    
+      <?php //b4st_navbar_search();?>    
     </div>
 
   </div>

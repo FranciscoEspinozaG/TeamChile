@@ -3,7 +3,7 @@
     b4st_main_before();
 ?>
 
-<main id="main" class="container mt-5">
+<main id="main" class="container">
   <div class="row">
 
     <div class="col-sm">
@@ -12,7 +12,7 @@
       </div><!-- /#content -->
     </div>
 
-    <?php get_template_part('includes/sidebar'); ?>
+    <?php //get_template_part('includes/sidebar'); ?>
 
   </div><!-- /.row -->
 </main><!-- /.container -->

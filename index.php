@@ -2,10 +2,9 @@
     get_template_part('includes/header'); 
     b4st_main_before();
 ?>
-
 <main id="main" class="container mt-5">
   <div class="row">
-
+<h1>jpñ</h1>
     <div class="col-sm">
       <div id="content" role="main">
 
@@ -14,7 +13,7 @@
       </div><!-- /#content -->
     </div>
 
-    <?php get_template_part('includes/sidebar'); ?>
+    <?php //get_template_part('includes/sidebar'); ?>
 
   </div><!-- /.row -->
 </main><!-- /.container -->

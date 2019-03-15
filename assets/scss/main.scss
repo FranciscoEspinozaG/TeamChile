@@ -10,11 +10,14 @@
 @import 'base/typography';
 @import 'base/global';
 
-@import 'components/loader';
-@import 'components/navbar';
-@import 'components/buttons';
-@import 'components/hamburguer';
-@import 'components/maps';
-@import 'components/tooltips';
+// @import 'components/loader';
+// @import 'components/navbar';
+// @import 'components/buttons';
+// @import 'components/hamburguer';
+// @import 'components/maps';
+// @import 'components/tooltips';
 
-@import 'layout/footer';
+// @import 'layout/footer';
+body{
+    color: $brand-primary-color;
+}
