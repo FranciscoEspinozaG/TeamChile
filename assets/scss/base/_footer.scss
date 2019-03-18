@@ -1,0 +1,17 @@
+:root{
+    azul-footer: linear-gradient(to right, red , yellow);
+}
+
+#footer{
+    background-color: rgba(0, 78, 195, 0.15);
+}
+
+.azul-footer{
+    background-color: rgba(0, 78, 195, 1);
+}
+
+.titulo-footer{
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-bottom: 2px solid #004EC3;
+}

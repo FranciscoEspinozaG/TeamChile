@@ -1,0 +1,50 @@
+*{
+    scroll-behavior: smooth;
+}
+
+img{
+    height: auto;
+}
+
+.separador{
+    height: 100vh;
+}
+
+.titulo-blanco-thin{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem !important;
+}
+
+.titulo-blanco-bolder{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bolder;
+    margin-top: -70px;
+    margin-bottom: 0px;
+}
+
+.titulo-noticias-deportistas-gris{
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 20px 0px 0px 0px;
+    line-height: 30px;
+}
+
+.titulo-azul{
+    font-size: 2.5rem;
+    color:blue;
+    text-transform: uppercase;
+    font-weight: regular;
+    line-height: 40px;
+}
+
+.titulo-rojo{
+    font-size: 4.5rem;
+    color:red;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 30px;
+}

@@ -9,6 +9,8 @@
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/global';
+@import 'base/pages';
+@import 'base/footer';
 
 // @import 'components/loader';
 // @import 'components/navbar';
@@ -20,4 +22,9 @@
 // @import 'layout/footer';
 body{
     color: $brand-primary-color;
+}
+
+.destacar{
+    border: 1px solid red;
+    box-sizing: border-box;
 }

@@ -4,7 +4,6 @@
 ?>
 <main id="main" class="container mt-5">
   <div class="row">
-<h1>jpñ</h1>
     <div class="col-sm">
       <div id="content" role="main">
 
