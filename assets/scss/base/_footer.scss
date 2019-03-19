@@ -15,3 +15,20 @@
     font-weight: bolder;
     border-bottom: 2px solid #004EC3;
 }
+
+//*----------------------------FOOTER----------------------------*//
+
+footer a:hover{
+    font-weight: bolder;
+    transition: .2s;
+}
+
+.ver-mas{
+    color:gray;
+    transition: .3s ease all;
+}
+
+.ver-mas:hover{
+    color: red;
+    transition: .3s ease all;
+}

@@ -2,18 +2,56 @@
     scroll-behavior: smooth;
 }
 
+/*-------EVITA EL SCROLL HORIZONTAL POR LOS EFECTOS-------*/
+body{
+    overflow-x: hidden;
+}
+
+/*------------------EVITA DEFORMAR FOTOS------------------*/
 img{
     height: auto;
 }
 
-.separador{
+/*-------------------------MENÚ-------------------------*/
+
+#navbar{
+    position: fixed;
+    box-sizing: content-box;
+    right: -500px;
     height: 100vh;
+    padding: 0px;
+    width: 500px !important;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-image: url(/teamchile/wp-content/uploads/2019/03/Team-Chile-9.2-elementos-66.png);
+}
+
+#menu-navbar{
+    color: white;
+}
+
+#navbarDropdown{
+    color: white !important;
+}
+
+/*-------------------GENERAL HOME-------------------*/
+.separador{
+    height: 80vh;
+}
+
+.separador-over{
+    height:100vh;
+    margin-top:-250px;
+    margin-bottom: -50px;
 }
 
 .titulo-blanco-thin{
     color: white;
     text-transform: uppercase;
     font-size: 3rem !important;
+    text-align: center;
 }
 
 .titulo-blanco-bolder{
@@ -21,8 +59,9 @@ img{
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: bolder;
-    margin-top: -70px;
+    margin-top: -50px;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .titulo-noticias-deportistas-gris{
@@ -47,4 +86,28 @@ img{
     text-transform: uppercase;
     font-weight: bolder;
     line-height: 30px;
+    word-break: normal;
 }
+
+.border-radius-5{
+    border-radius: 5px;
+}
+
+/*---------------------SECCION A MANO EN HOME---------------------*/
+
+#nuestros-sponsors{
+    height: 90vh !important;
+    background-image: url(/teamchile/wp-content/uploads/2019/03/fondo-sponsors-23.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.icono-sponsor{
+    width: auto;
+    height: 50px;
+}
+
+/*-------------BOTON PERSONALIZADO TEAMCHILE-------------*/
+
+

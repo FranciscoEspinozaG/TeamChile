@@ -6,13 +6,13 @@
 <?php
 echo do_shortcode('[rev_slider alias="slide-home"]');
 $home_loop_args = array(
-'post_type' => 'experience',
+'post_type' => 'deportistas',
 'posts_per_page' => 1
 );
 $home_loop = new WP_Query( $home_loop_args );
 ?>
 
-<div class="container pt-3 pb-3 mt-5">
+<div class="container pt-3 pb-3 mt-5" style="position:relative;z-index:1;">
 
 <?php if ( $home_loop->have_posts() ) :?>
   <div class="col-md-6" style="text-align:right;">
@@ -25,7 +25,9 @@ $home_loop = new WP_Query( $home_loop_args );
       <a href="<?php the_permalink();?>">
         <p class="titulo-noticias-deportistas-gris"> <?php the_title()?> </p>
       </a>
-      <?php the_excerpt()?>
+      <a href="<?php the_permalink();?>">
+        <?php the_excerpt()?>
+      </a>
     </div>
     <div class="col-md-6">
         <a href="<?php the_permalink();?>">
@@ -72,16 +74,35 @@ $home_loop = new WP_Query( $home_loop_args );
           <p class="titulo-rojo">Team Chile</p>
       <a href="<?php the_permalink();?>">
         <p class="titulo-noticias-deportistas-gris"> <?php the_title()?> </p>
+        <?php the_excerpt()?><p class="ver-mas">Ver más...</p>
       </a>
-      <?php the_excerpt()?>
     </div>
     <div class="col-md-6">
+    <a href="<?php the_permalink();?>">
       <?php the_post_thumbnail('medium', array('class'=>'w-100')); ?>
+    </a>
     </div>
     </article>    
   <?php endwhile; wp_reset_postdata();?>
 <?php endif; ?>
+</div>
 
+<div id="nuestros-sponsors" class="vc_row wpb_row vc_row-fluid vc_row-has-fill d-flex align-items-center" style="position: relative; left: -381.5px; box-sizing: border-box; width: 1903px; padding-left: 381.5px; padding-right: 381.5px;">
+  <div class="container justify-content-center" style="height:auto;">
+    <div class="">
+      <p class="titulo-blanco-thin">Nuestros</p>
+      <p class="titulo-blanco-bolder">Sponsors</p>
+    </div>
+    <div class="p-5 bg-light border-radius-5 d-flex justify-content-around wpb_animate_when_almost_visible wpb_flipInX flipInX">
+      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/pf-alimentos.png" alt="">
+      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/logo-jumbo.png" alt="">
+      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/canal-13.png" alt="">
+      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/logo-sparta.png" alt="">
+    </div>
+  </div>
+  <div>
+    
+  </div>
 </div>
 
 <?php 

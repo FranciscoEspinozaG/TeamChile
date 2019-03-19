@@ -18,12 +18,12 @@ if ( ! function_exists('deportistas_destacados') ) {
             'add_new'               => __( 'Agregar nuevo', 'text_domain' ),
             'new_item'              => __( 'Nuevo deportista', 'text_domain' ),
             'edit_item'             => __( 'Editar deportista', 'text_domain' ),
-            'update_item'           => __( 'Update Item', 'text_domain' ),
+            'update_item'           => __( 'Actualizar deportista', 'text_domain' ),
             'view_item'             => __( 'Ver deportista', 'text_domain' ),
             'view_items'            => __( 'Ver deportistas', 'text_domain' ),
             'search_items'          => __( 'Buscar deportista', 'text_domain' ),
-            'not_found'             => __( 'Not found', 'text_domain' ),
-            'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+            'not_found'             => __( 'No encontrado', 'text_domain' ),
+            'not_found_in_trash'    => __( 'No encontrado en la papelera', 'text_domain' ),
             'featured_image'        => __( 'Imagen destacada', 'text_domain' ),
             'set_featured_image'    => __( 'Agregar Imagen destacada', 'text_domain' ),
             'remove_featured_image' => __( 'Remover Imagen destacada', 'text_domain' ),
@@ -45,7 +45,7 @@ if ( ! function_exists('deportistas_destacados') ) {
             'show_ui'               => true,
             'show_in_menu'          => true,
             'menu_position'         => 5,
-            'menu_icon'             => get_bloginfo('template_directory') . '/assets/img/bk-experiencer-icon.png',
+            'menu_icon'             => get_bloginfo('template_directory') . '/assets/img/icono-custom-team-01.png',
             'show_in_admin_bar'     => true,
             'show_in_nav_menus'     => true,
             'can_export'            => true,
@@ -55,7 +55,7 @@ if ( ! function_exists('deportistas_destacados') ) {
             'capability_type'       => 'page',
             'show_in_rest'          => true,
         );
-        register_post_type( 'experience', $args );
+        register_post_type( 'deportistas', $args );
     }
     add_action( 'init', 'deportistas_destacados', 0 );
 }

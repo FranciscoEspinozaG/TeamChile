@@ -11,7 +11,7 @@
 
 <?php b4st_navbar_before();?>
 
-<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top" style="width:300px; heigh:100vh;z-index:100;">
+<nav id="navbar" class="navbar-expand-md col-md d-flex align-items-center destacar" style="width:300px; heigh:100vh;z-index:100;">
   <div class="container">
 
     <?php //b4st_navbar_brand();?>
@@ -20,12 +20,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarDropdown">
+    <div id="menu-navbar" class="collapse navbar-collapse d-flex" id="navbarDropdown">
       <?php
         wp_nav_menu( array(
           'theme_location'  => 'navbar',
           'container'       => false,
-          'menu_class'      => 'destacar',
+          'menu_class'      => '',
           'fallback_cb'     => '__return_false',
           'items_wrap'      => '<ul id="%1$s" class="mr-auto mt-2 mt-lg-0 %2$s">%3$s</ul>',
           'depth'           => 2,
