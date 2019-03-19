@@ -12,30 +12,6 @@ img{
     height: auto;
 }
 
-/*-------------------------MENÚ-------------------------*/
-
-#navbar{
-    position: fixed;
-    box-sizing: content-box;
-    right: -500px;
-    height: 100vh;
-    padding: 0px;
-    width: 500px !important;
-    align-content: center;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    background-image: url(/teamchile/wp-content/uploads/2019/03/Team-Chile-9.2-elementos-66.png);
-}
-
-#menu-navbar{
-    color: white;
-}
-
-#navbarDropdown{
-    color: white !important;
-}
-
 /*-------------------GENERAL HOME-------------------*/
 .separador{
     height: 80vh;
