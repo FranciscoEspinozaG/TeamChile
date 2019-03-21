@@ -49,7 +49,7 @@
         <br>
         <a href="/teamchile/#que-es-ser-socio"><li class="boton-menu text-center btn-menu">¿Qué es ser socio del Team?</li></a>
         <br>
-        <a href="/teamchile/#categorias-y-beneficios"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
+        <a href="/teamchile/categorias"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
         <br>
         <a href="/teamchile/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu">¿Quién administra los recursos?</li></a>
         <br>
@@ -91,7 +91,7 @@
     <div class=" ">
       <img src="/teamchile/wp-content/uploads/2019/03/menu-scroll-cta.png" alt="" style="height:45px;width:auto;">
     </div>
-    <div class=" boton-menu boton-menu-scroll">
+    <div class=" boton-menu boton-menu-scroll align-items-center">
       <p>/// MENU</p>
     </div>
   </div>
