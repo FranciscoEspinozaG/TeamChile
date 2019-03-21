@@ -94,10 +94,10 @@ $home_loop = new WP_Query( $home_loop_args );
       <p class="titulo-blanco-bolder">Sponsors</p>
     </div>
     <div class="p-5 bg-light border-radius-5 d-flex justify-content-around wpb_animate_when_almost_visible wpb_flipInX flipInX">
-      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/pf-alimentos.png" alt="">
-      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/logo-jumbo.png" alt="">
-      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/canal-13.png" alt="">
-      <img class="icono-sponsor" src="/teamchile/wp-content/uploads/2019/03/logo-sparta.png" alt="">
+      <img class="icono-sponsor" src="/wp-content/uploads/2019/03/pf-alimentos.png" alt="">
+      <img class="icono-sponsor" src="/wp-content/uploads/2019/03/logo-jumbo.png" alt="">
+      <img class="icono-sponsor" src="/wp-content/uploads/2019/03/canal-13.png" alt="">
+      <img class="icono-sponsor" src="/wp-content/uploads/2019/03/logo-sparta.png" alt="">
     </div>
   </div>
   <div>
