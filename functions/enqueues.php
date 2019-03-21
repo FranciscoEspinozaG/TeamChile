@@ -3,6 +3,26 @@
  * Enqueues
  */
 
+$url = 'https://code.jquery.com/jquery-latest.min.js';
+$test_url = @fopen($url, 'r');
+if ($test_url !== false) {
+    function load_external_jQuery()
+    {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'https://code.jquery.com/jquery-latest.min.js');
+        wp_enqueue_script('jquery');
+    }
+    add_action('wp_enqueue_scripts', 'load_external_jQuery');
+} else {
+    function load_local_jQuery()
+    {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', get_bloginfo('template_url') . './assets/js/jquery.min.js', __FILE__, false, '1.11.3', true);
+        wp_enqueue_script('jquery');
+    }
+    add_action('wp_enqueue_scripts', 'load_local_jQuery');
+}
+
 if ( ! function_exists('b4st_enqueues') ) {
 	function b4st_enqueues() {
 
@@ -32,6 +52,9 @@ if ( ! function_exists('b4st_enqueues') ) {
 
 		wp_register_script('b4st', get_template_directory_uri() . '/assets/js/b4st.js', false, null, true);
 		wp_enqueue_script('b4st');
+
+		wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main-js.js', false, null, true);
+		wp_enqueue_script('main-js');
 
 		if (is_singular() && comments_open() && get_option('thread_comments')) {
 			wp_enqueue_script('comment-reply');
