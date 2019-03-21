@@ -13,17 +13,17 @@
 
 <div id="barramenu" class="d-flex fixed-top ml-auto mr-auto ">
   <div class="row ml-auto mr-auto w-100 p-2">
-    <div class="col-md-3 d-flex justify-content-center">
-      <a href="/#"><img id="banderin-menu" src="/wp-content/uploads/2019/03/banderini-23.png" alt=""></a>
+    <div class="d-none d-md-flex justify-content-center">
+      <a href="/#"><img id="banderin-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/banderini-23.png" alt=""></a>
     </div>
-    <div class="col-5 d-flex justify-content-around row">
-      <img src="/wp-content/uploads/2019/03/pf-bco.png" alt="" style="height:60px; width:auto;">
-      <img src="/wp-content/uploads/2019/03/jumbo-bco.png" alt="" style="height:60px; width:auto;">
-      <img src="/wp-content/uploads/2019/03/13-bco.png" alt="" style="height:60px; width:auto;">
-      <img src="/wp-content/uploads/2019/03/sparta-bco.png" alt="" style="height:60px; width:auto;">
+    <div class="d-none d-md-flex justify-content-around row">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/pf-bco.png" alt="" style="height:60px; width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/jumbo-bco.png" alt="" style="height:60px; width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/13-bco.png" alt="" style="height:60px; width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/sparta-bco.png" alt="" style="height:60px; width:auto;">
     </div>
     <div class="col-md-3 d-flex align-items-center justify-content-center">
-      <img src="/wp-content/uploads/2019/03/cta-team.gif" alt="" style="height:30px; width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;">
     </div>
     <div class="col-md-1 d-flex align-items-center justify-content-center pt-3 boton-menu">
      <p>/// MENU</p>
@@ -43,28 +43,28 @@
     <div class="collapse navbar-collapse row d-flex align-items-center ml-auto mr-auto col-8 " id="navbarDropdown" style="color:white;">
       <p class="boton-menu text-center w-100 mb-5">X Cerrar Menú</p>
       <ul class="w-100 border-bottom ">
-        <a  href="/#"><li class="boton-menu text-center btn-menu">Inicio</li></a>
+        <a  href="<?php echo site_url(); ?>/#"><li class="boton-menu text-center btn-menu">Inicio</li></a>
         <br>
-        <a href="/que-es-teamchile"><li class="boton-menu text-center btn-menu">¿Qué es Team Chile?</li></a>
+        <a href="<?php echo site_url(); ?>/que-es-teamchile"><li class="boton-menu text-center btn-menu">¿Qué es Team Chile?</li></a>
         <br>
-        <a href="/#que-es-ser-socio"><li class="boton-menu text-center btn-menu">¿Qué es ser socio del Team?</li></a>
+        <a href="<?php echo site_url(); ?>/#que-es-ser-socio"><li class="boton-menu text-center btn-menu">¿Qué es ser socio del Team?</li></a>
         <br>
-        <a href="/categorias"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
+        <a href="<?php echo site_url(); ?>/categorias"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
         <br>
-        <a href="/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu">¿Quién administra los recursos?</li></a>
+        <a href="<?php echo site_url(); ?>/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu">¿Quién administra los recursos?</li></a>
         <br>
-        <a href="/#nuestros-sponsors"><li class="boton-menu text-center btn-menu">Sponsors</li></a>
+        <a href="<?php echo site_url(); ?>/#nuestros-sponsors"><li class="boton-menu text-center btn-menu">Sponsors</li></a>
         <br>
-        <a href="/#instagram"><li class="boton-menu text-center btn-menu">Instagram</li></a>
+        <a href="<?php echo site_url(); ?>/#instagram"><li class="boton-menu text-center btn-menu">Instagram</li></a>
         <br>
-        <a href="/contacto"><li class="boton-menu text-center btn-menu">Contacto</li></a>
+        <a href="<?php echo site_url(); ?>/contacto"><li class="boton-menu text-center btn-menu">Contacto</li></a>
         <br>
       </ul>
       <div class="container d-flex justify-content-around">
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="/wp-content/uploads/2019/03/ico-bco-fb.png" alt=""></a>
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="/wp-content/uploads/2019/03/ico-bco-tw.png" alt=""></a>
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="/wp-content/uploads/2019/03/ico-bco-in.png" alt=""></a>
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="/wp-content/uploads/2019/03/ico-bco-yt.png" alt=""></a>    
+        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-fb.png" alt=""></a>
+        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-tw.png" alt=""></a>
+        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-in.png" alt=""></a>
+        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-yt.png" alt=""></a>    
       </div>
       <?php
       //  wp_nav_menu( array(
@@ -85,11 +85,11 @@
 <div id="menu-scroll" class="w-100 fixed-top esconde-menu-scroll p-1">
   <div class="d-flex justify-content-around row col-md-10 col-sm-10 mr-auto ml-auto p-0 m-0">
     <div class=" row p-0 m-0  d-flex justify-content-center">
-      <img src="/wp-content/uploads/2019/03/menu-scroll-team.png" alt="" style="height:45px;width:auto;">
-      <img src="/wp-content/uploads/2019/03/menu-scroll-coch.png" alt="" style="height:45px;width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-team.png" alt="" style="height:45px;width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-coch.png" alt="" style="height:45px;width:auto;">
     </div>
     <div class=" ">
-      <img src="/wp-content/uploads/2019/03/menu-scroll-cta.png" alt="" style="height:45px;width:auto;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-cta.png" alt="" style="height:45px;width:auto;">
     </div>
     <div class=" boton-menu boton-menu-scroll align-items-center">
       <p>/// MENU</p>

@@ -5,8 +5,8 @@
 
   <div class="container row ml-auto mr-auto pt-3">
     <div class="col-md-3 align-self-center d-flex justify-content-around">
-      <img src="/wp-content/uploads/2019/03/Team-color-md.png">
-      <img src="/wp-content/uploads/2019/03/COCH-color-md.png">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/Team-color-md.png">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/COCH-color-md.png">
     </div>
     <div class="col-md-3">
       <ul>
@@ -17,10 +17,10 @@
       </ul>
       <p class="titulo-footer">Síguenos</p>
       <div class="container row d-flex justify-content-around pb-4">
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img src="/wp-content/uploads/2019/03/icono-facebook.png" alt="facebook-teamchile"></a>
-        <a href="https://www.instagram.com/coch_teamchile/" target="_blank"><img src="/wp-content/uploads/2019/03/icono-instagram.png" alt=""></a>
-        <a href="https://twitter.com/TeamChile_COCH" target="_blank"><img src="/wp-content/uploads/2019/03/icono-twitter.png" alt=""></a>
-        <a href="https://www.youtube.com/channel/UCBDTU9lVrB9NZn2HwMUDp-w" target="_blank"><img src="/wp-content/uploads/2019/03/icono-youtube.png" alt=""></a>
+        <a href="https://www.facebook.com/teamchile/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/assets/img/icono-facebook.png" alt="facebook-teamchile"></a>
+        <a href="https://www.instagram.com/coch_teamchile/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/assets/img/icono-instagram.png" alt=""></a>
+        <a href="https://twitter.com/TeamChile_COCH" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/assets/img/icono-twitter.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCBDTU9lVrB9NZn2HwMUDp-w" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/assets/img/icono-youtube.png" alt=""></a>
       </div>
     </div>
     <div class="col-md-6">
