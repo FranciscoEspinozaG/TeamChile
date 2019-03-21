@@ -144,12 +144,15 @@ img {
 #navbarDropdown {
   width: 50px !important; }
 
-#barra-menu {
+#barramenu {
   width: 90vw;
   height: auto;
   z-index: 9;
   margin-top: 30px;
   border-radius: 5px;
+  -webkit-transition: 1s ease-in-out all;
+  -o-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
   background: rgba(191, 0, 6, 0.9);
   background: -moz-linear-gradient(45deg, rgba(191, 0, 6, 0.9) 0%, rgba(233, 0, 8, 0.9) 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(191, 0, 6, 0.9)), color-stop(100%, rgba(233, 0, 8, 0.9)));
@@ -162,6 +165,13 @@ img {
 #banderin-menu {
   margin-top: -42px;
   position: absolute; }
+
+.escondebarra {
+  top: -100%;
+  border: 1px solid blue;
+  -webkit-transition: .5s ease-in-out all;
+  -o-transition: .5s ease-in-out all;
+  transition: .5s ease-in-out all; }
 
 #navbar {
   z-index: 10;
@@ -180,12 +190,9 @@ img {
 
 .menu-desaparece {
   margin-right: -500px;
-  -webkit-transition: 6s ease all;
-  -o-transition: 6s ease all;
-  transition: 6s ease all;
-  -webkit-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s; }
+  -webkit-transition: 1s ease all;
+  -o-transition: 1s ease all;
+  transition: 1s ease all; }
 
 .boton-menu {
   color: white;
@@ -212,15 +219,15 @@ img {
   height: 26px;
   width: auto; }
 
-.esconde-barra {
-  margin-top: -500px; }
-
 /*------------------MENU AL SCROLL------------------*/
 #menu-scroll {
   background-color: rgba(255, 255, 255, 0.9); }
 
 .esconde-menu-scroll {
-  margin-top: -100%; }
+  margin-top: -100%;
+  -webkit-transition: 1s ease-in-out all;
+  -o-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all; }
 
 .boton-menu-scroll {
   color: red;

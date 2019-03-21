@@ -11,7 +11,7 @@
 
 <?php b4st_navbar_before();?>
 
-<div id="barra-menu" class="d-flex fixed-top ml-auto mr-auto">
+<div id="barramenu" class="d-flex fixed-top ml-auto mr-auto ">
   <div class="row ml-auto mr-auto w-100 p-2">
     <div class="col-md-3 d-flex justify-content-center">
       <a href="/teamchile/#"><img id="banderin-menu" src="/teamchile/wp-content/uploads/2019/03/banderini-23.png" alt=""></a>
@@ -91,7 +91,7 @@
     <div class=" ">
       <img src="/teamchile/wp-content/uploads/2019/03/menu-scroll-cta.png" alt="" style="height:45px;width:auto;">
     </div>
-    <div class=" boton-menu boton-menu-scroll esconde-menu-scroll">
+    <div class=" boton-menu boton-menu-scroll">
       <p>/// MENU</p>
     </div>
   </div>

@@ -17,12 +17,13 @@ img{
     width: 50px !important;
 }
 
-#barra-menu{
+#barramenu{
     width: 90vw;
     height: auto;
     z-index: 9;
     margin-top: 30px;
     border-radius: 5px;
+    transition: 1s ease-in-out all;
     
 background: rgba(191,0,6,0.9);
 background: -moz-linear-gradient(45deg, rgba(191,0,6,0.9) 0%, rgba(233,0,8,0.9) 100%);
@@ -38,6 +39,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
 #banderin-menu{
     margin-top: -42px;
     position: absolute;
+}
+
+.escondebarra{
+    top: -100%;
+    border: 1px solid blue;
+    transition: .5s ease-in-out all;
 }
 
 #navbar{
@@ -56,8 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
 
 .menu-desaparece{
     margin-right: -500px;
-    transition: 6s ease all;
-    transition-delay: 1s;
+    transition: 1s ease all;
 }
 
 .boton-menu{
@@ -83,10 +89,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
     width: auto;
 }
 
-.esconde-barra{
-    margin-top: -500px;
-}
-
 /*------------------MENU AL SCROLL------------------*/
 
 #menu-scroll{
@@ -95,6 +97,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
 
 .esconde-menu-scroll{
     margin-top: -100%;
+    transition: 1s ease-in-out all;
 }
 
 .boton-menu-scroll{
