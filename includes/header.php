@@ -13,10 +13,10 @@
 
 <div id="barramenu" class="d-flex fixed-top ml-auto mr-auto ">
   <div class="row ml-auto mr-auto w-100 p-2">
-    <div class="d-none d-md-flex justify-content-center">
+    <div class="d-none col-md-3 d-md-flex justify-content-center">
       <a href="/#"><img id="banderin-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/banderini-23.png" alt=""></a>
     </div>
-    <div class="d-none d-md-flex justify-content-around row">
+    <div class="d-none d-md-flex col-md-5 justify-content-around row">
       <img src="<?php bloginfo('template_directory'); ?>/assets/img/pf-bco.png" alt="" style="height:60px; width:auto;">
       <img src="<?php bloginfo('template_directory'); ?>/assets/img/jumbo-bco.png" alt="" style="height:60px; width:auto;">
       <img src="<?php bloginfo('template_directory'); ?>/assets/img/13-bco.png" alt="" style="height:60px; width:auto;">

@@ -87,8 +87,8 @@ $home_loop = new WP_Query( $home_loop_args );
 <?php endif; ?>
 </div>
 
-<div id="nuestros-sponsors" class="vc_row wpb_row vc_row-fluid vc_row-has-fill d-flex align-items-center" style="position: relative; left: -381.5px; box-sizing: border-box; width: 1903px; padding-left: 381.5px; padding-right: 381.5px;">
-  <div class="container justify-content-center" style="height:auto;">
+<div id="nuestros-sponsors" class="d-flex align-items-center w-100 vc_custom_1552942342630" style="">
+  <div class="container justify-content-center row" style="height:auto;">
     <div class="">
       <p class="titulo-blanco-thin">Nuestros</p>
       <p class="titulo-blanco-bolder">Sponsors</p>
