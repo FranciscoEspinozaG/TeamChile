@@ -7,6 +7,29 @@ body{
     overflow-x: hidden;
 }
 
+.form-control:focus{
+    border: 1px solid red !important;
+    box-shadow: 0 0 0 .2rem rgba(191,0,6,.25);
+}
+
+.btn-primary{
+    background-color: rgba(191,0,6,0.9);
+    border-color: rgba(233,0,8,0.9);
+    margin-top: 20px;
+}
+
+.btn-primary:hover{
+    background-color: lightgray;
+    border-color: lightgray;
+    color: red;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
 /*------------------EVITA DEFORMAR FOTOS------------------*/
 img{
     height: auto;
