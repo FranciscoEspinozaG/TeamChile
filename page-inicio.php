@@ -21,7 +21,7 @@ $home_loop = new WP_Query( $home_loop_args );
     <article class="row">
       <div class="col-md-6" style="text-align:right;">
           <p class="titulo-azul">Deportistas</p>
-          <p class="titulo-rojo">Destacados</p>
+          <p class="titulo-rojo salto-titulo-rojo">Destacados</p>
       <a href="<?php the_permalink();?>">
         <p class="titulo-noticias-deportistas-gris"> <?php the_title()?> </p>
       </a>

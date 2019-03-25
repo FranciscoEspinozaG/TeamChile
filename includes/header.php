@@ -13,20 +13,20 @@
 
 <div id="barramenu" class="d-flex fixed-top ml-auto mr-auto ">
   <div class="row ml-auto mr-auto w-100 p-2">
-    <div class="d-none col-md-3 d-md-flex justify-content-center">
-      <a href="/#"><img id="banderin-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/banderini-23.png" alt=""></a>
+    <div class="d-none d-lg-flex justify-content-center ml-auto mr-auto">
+      <a href="<?php echo site_url(); ?>/#"><img id="banderin-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/banderini-23.png" alt=""></a>
     </div>
-    <div class="d-none d-md-flex col-md-5 justify-content-around row">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/pf-bco.png" alt="" style="height:60px; width:auto;">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/jumbo-bco.png" alt="" style="height:60px; width:auto;">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/13-bco.png" alt="" style="height:60px; width:auto;">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/sparta-bco.png" alt="" style="height:60px; width:auto;">
+    <div class="d-none d-lg-flex justify-content-around mr-1 row" style="margin-left:13%; width:30%; max-whidth:400px;">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/pf-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/jumbo-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/13-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/img/sparta-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
     </div>
-    <div class="col-md-3 d-flex align-items-center justify-content-center">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;">
+    <div class="d-flex align-items-center justify-content-center m-auto">
+      <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;"></a>
     </div>
-    <div class="col-md-1 d-flex align-items-center justify-content-center pt-3 boton-menu">
-     <p>/// MENU</p>
+    <div class="align-items-center boton-menu m-auto">
+      <p class="mt-1 mb-0"><i class="fa fa-bars" aria-hidden="true"></i> MENU</p>
     </div>
   </div>
 </div>
@@ -83,16 +83,18 @@
   </div>
 </nav>
 <div id="menu-scroll" class="w-100 fixed-top esconde-menu-scroll p-1">
-  <div class="d-flex justify-content-around row col-md-10 col-sm-10 mr-auto ml-auto p-0 m-0">
-    <div class=" row p-0 m-0  d-flex justify-content-center">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-team.png" alt="" style="height:45px;width:auto;">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-coch.png" alt="" style="height:45px;width:auto;">
+  <div class="d-flex justify-content-around row mr-auto ml-auto p-0 m-0">
+    <a href="<?php echo site_url();?>/#" class="m-auto">
+      <div class=" row p-0 m-auto d-flex justify-content-center">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-team.png" alt="" style="height:45px;width:auto;">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-coch.png" alt="" style="height:45px;width:auto;">
+      </div>
+    </a>
+    <div class="m-auto">
+    <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-cta.png" alt="" style="height:45px;width:auto;"></a>
     </div>
-    <div class=" ">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-cta.png" alt="" style="height:45px;width:auto;">
-    </div>
-    <div class=" boton-menu boton-menu-scroll align-items-center">
-      <p>/// MENU</p>
+    <div class=" boton-menu boton-menu-scroll align-items-center m-auto">
+      <p class="m-0"><i class="fa fa-bars" aria-hidden="true"></i> MENU</p>
     </div>
   </div>
 </div>

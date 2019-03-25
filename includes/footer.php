@@ -29,24 +29,24 @@
         <div class="row">
           <div class="col-md-6">
             <ul>
-              <li><a href="/#">Inicio</a></li>
+              <li><a href="<?php echo site_url(); ?>/#">Inicio</a></li>
               <br>
-              <li><a href="/que-es-teamchile">¿Qué es Team Chile?</a></li>
+              <li><a href="<?php echo site_url(); ?>/que-es-teamchile">¿Qué es Team Chile?</a></li>
               <br>
-              <li><a href="/#que-es-ser-socio">¿Qué es ser socio del Team?</a></li>
+              <li><a href="<?php echo site_url(); ?>/#que-es-ser-socio">¿Qué es ser socio del Team?</a></li>
               <br>
-              <li><a href="/categorias-y-beneficios">Categorías y Beneficios</a></li>
+              <li><a href="<?php echo site_url(); ?>/categorias">Categorías y Beneficios</a></li>
             </ul>
           </div>
           <div class="col-md-6">
             <ul>
-              <li><a href="/quien-administra-los-recursos">¿Quién administra los recursos?</a></li>
+              <li><a  href="<?php echo site_url(); ?>/quien-administra-los-recursos">¿Quién administra los recursos?</a></li>
               <br>
-              <li><a href="/#sponsors-teamchile">Sponsors</a></li>
+              <li><a  href="<?php echo site_url(); ?>/#sponsors-teamchile">Sponsors</a></li>
               <br>
-              <li><a href="/#instagram">Instagram</a></li>
+              <li><a  href="<?php echo site_url(); ?>/#instagram">Instagram</a></li>
               <br>
-              <li><a href="/contacto">Contacto</a></li>
+              <li><a  href="<?php echo site_url(); ?>/contacto">Contacto</a></li>
             </ul>
           </div>
         </div>
