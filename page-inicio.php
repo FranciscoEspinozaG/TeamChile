@@ -88,12 +88,12 @@ $home_loop = new WP_Query( $home_loop_args );
 </div>
 
 <div id="nuestros-sponsors" class="d-flex align-items-center w-100 vc_custom_1552942342630" style="">
-  <div class="container justify-content-center row" style="height:auto;">
-    <div class="">
+  <div class="container justify-content-center row w-100 ml-auto mr-auto">
+    <div class="w-100">
       <p class="titulo-blanco-thin">Nuestros</p>
       <p class="titulo-blanco-bolder">Sponsors</p>
     </div>
-    <div class="p-5 bg-light border-radius-5 d-flex justify-content-around wpb_animate_when_almost_visible wpb_flipInX flipInX">
+    <div class="p-5 bg-light border-radius-5 d-flex justify-content-around wpb_animate_when_almost_visible wpb_flipInX flipInX w-100">
       <img class="icono-sponsor" src="<?php bloginfo('template_directory'); ?>/assets/img/pf-alimentos.png" alt="">
       <img class="icono-sponsor" src="<?php bloginfo('template_directory'); ?>/assets/img/logo-jumbo.png" alt="">
       <img class="icono-sponsor" src="<?php bloginfo('template_directory'); ?>/assets/img/canal-13.png" alt="">
