@@ -99,4 +99,4 @@
   </div>
 </div>
 <?php b4st_navbar_after();?>
-<main id="main" class="container">
+<main id="main" class="">

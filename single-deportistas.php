@@ -1,25 +1,46 @@
-<div class="w-100" style="height:60vh; top:0;overflow:hidden;">
-  <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
-    <?php if ( $foto_deportista ) { ?>
-	    <img class="w-100" src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" />
-  <?php } ?>
-  
-</div>
-
 <?php
     get_template_part('includes/header');
-    b4st_main_before();
+    //b4st_main_before();
 ?>
- <div class="container" style="margin-top:-30vh;">
-   <div class="row">
-     <div class="col-6"></div>
-     <div class="col-6"><h1 class="titulo-blanco-bolder text-left"><?php the_field( 'nombre_y_apellido' ); ?></h1><br>
-     <br>
-     <br>
-     <br>
-     <br></div>
+<!-- Comienzo del single -->
+<?php $foto_deportista = get_field( 'foto_deportista' ); ?>
+    <?php if ( $foto_deportista ) { ?>
+ <div class="header-single-deportista background-fluid" style="background-image:url(<?php echo $foto_deportista['url']; ?>);">
+   <div class="container">
+    <div class="row" style="margin-top:400px;">
+      <div class="col-6 d-none d-md-flex">
+        <!-- Espacio vacío -->
+      </div>
+      <div class="col-6 d-none d-md-flex">
+        <h1 class="titulo-blanco-bolder text-left"><?php the_field( 'nombre_y_apellido' ); ?></h1>
+      </div>
+      <!-- Solo en mobile -->
+      <div class="d-md-none ml-auto mr-auto mt-5">
+        <h1 class="titulo-blanco-bolder text-center" style="font-size:2em;"><?php the_field( 'nombre_y_apellido' ); ?></h1>
+      </div>
+    </div>
    </div>
  </div>
+ <!-- divisor con descripción -->
+ <div class="container pt-5">
+  <p class="columnas-descripcion">
+    <?php the_field( 'descripcion_del_deportista' ); ?>
+  </p>
+ </div>
+
+<!-- Next/Previous Posts -->
+<div class="mp_archive2">
+<div id="more_posts">
+    <div class="oe">
+        <?php previous_post_link('%link', '« Previous post', TRUE); ?>
+    </div>
+
+    <div class="re">
+        <?php next_post_link('%link', 'Next post »', TRUE); ?>
+    </div>
+</div>
+<?php } ?>
+</div>
 
 
 <main id="main" class="container mt-5">
