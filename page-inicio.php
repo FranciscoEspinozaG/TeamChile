@@ -8,7 +8,7 @@
     );
 $home_loop = new WP_Query( $home_loop_args );
 ?>
-
+<!-- DEPORTISTAS DESTACADOS -->
 <div class="container pt-3 pb-3 mt-5" style="position:relative;z-index:1;">
 
 <?php if ( $home_loop->have_posts() ) :?>
@@ -21,20 +21,42 @@ $home_loop = new WP_Query( $home_loop_args );
         <p class="titulo-noticias-deportistas-gris"> <?php the_title()?> </p>
       </a>
       <a href="<?php the_permalink();?>">
-        <?php the_excerpt()?>
+        <p><?php the_field( 'extracto' ); ?>...</p>
       </a>
     </div>
-    <div class="col-md-6">
-        <a href="<?php the_permalink();?>">
-          <?php the_post_thumbnail('medium', array('class'=>'w-100')); ?>
-        </a>
+    <a href="<?php the_permalink();?>" class="col-md-6" style="height:300px; overflow:hidden;">
+      <div class="w-100">
+          <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
+            <?php if ( $foto_deportista ) { ?>
+	            <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:300px; width:auto;" />
+            <?php } ?>
       </div>
+    </a>
      
     </article>    
   <?php endwhile; wp_reset_postdata();?>
-<?php endif; ?>
+  <?php endif; ?>
 
 </div>
+<!-- TERMINO DE DEPORTISTAS DESTACADOS -->
+<!-- CARRUCEL PARA DEPORTISTAS DESTACADOS -->
+<div class="container pt-3 pb-3 mt-5 destacar" style="position:relative;z-index:1;">
+
+<?php if ( $home_loop->have_posts() ) :?>
+    <?php while ($home_loop->have_posts()) : $home_loop->the_post(); ?>
+
+    <?php endwhile; wp_reset_postdata();?>
+  <?php endif; ?>
+
+</div>
+<!-- TERMINO DE CARRUCEL PARA DEPORTISTAS DESTACADOS -->
+<!-- BOTON VER TODOS LOS DEPORTISTAS -->
+<div class="vc_btn3-container vc_btn3-center mt-3">
+  <a href="<?php echo site_url(); ?>/deportistas" class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-inverse">
+    Ver los deportistas
+  </a>
+</div>
+
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 <div class="container">

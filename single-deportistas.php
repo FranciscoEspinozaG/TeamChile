@@ -41,7 +41,7 @@
 </div>
 <?php } ?>
 </div>
-
+<!-- Fin de anterior y siguiente -->
 
 <main id="main" class="container mt-5">
   <div class="row">

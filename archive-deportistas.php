@@ -3,7 +3,9 @@
     b4st_main_before();
 ?>
 
+<div class="container" style="height:50vh;">
 
+</div>
 
 <?php 
     b4st_main_after();
