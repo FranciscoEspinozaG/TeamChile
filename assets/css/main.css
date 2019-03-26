@@ -339,7 +339,7 @@ img {
   font-weight: bolder;
   line-height: 55px; }
 
-.salto-titulo-rojo {
+.salto-titulo {
   word-break: normal;
   word-break: break-all; }
 
@@ -410,6 +410,15 @@ footer a:hover {
   column-count: 2;
   -webkit-column-width: 300px;
   column-width: 300px; }
+
+#header-categorias {
+  background-image: url("../img/fondo-categorias.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: auto;
+  padding-top: 160px;
+  padding-bottom: 70px; }
 
 body {
   color: #4D4D4D; }
