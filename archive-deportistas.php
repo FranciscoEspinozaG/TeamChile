@@ -13,7 +13,7 @@
         <p class="titulo-blanco-thin salto-titulo text-right d-md-none destacar" style="font-size:1px;">los deportistas</p>
       </div>
       <div class=" col-md-6">
-        <p class="texto-blanco text-left">Puedes decidir si un 50% de tu aporte va con destino a tu deporte favorito. Por ejemplo, si eres fanático del tenis, elige destinarle la mitad del monto con el cual contribuyes mensualmente!Además, tendrás acceso a:<br><br>- Información sobre el calendario de eventos deportivos de tus eventos favoritos.<br><br>- Participar en clínicas realizadas con nuestros deportistas.<br><br>- Descuentos en tiendas deportivas.<br><br>Y otros beneficios asociados al mundo del deporte!</p>
+        <p class="texto-blanco text-left"></p>
       </div>
     </div>
   </div>   
@@ -37,7 +37,7 @@ if ( $deportistas->have_posts() ) : ?>
 					<a href="<?php the_permalink();?>">
                     <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
                     <?php if ( $foto_deportista ) { ?>
-                    <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:150px; width:auto;" />
+                    <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:200px; width:auto;" />
                     <?php } ?>
                     <p><?php the_field( 'nombre_y_apellido' );?></p>
 					</a>			
