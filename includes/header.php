@@ -49,7 +49,7 @@
         <br>
         <a href="<?php echo site_url(); ?>/#que-es-ser-socio"><li class="boton-menu text-center btn-menu">¿Qué es ser socio del Team?</li></a>
         <br>
-        <a href="<?php echo site_url(); ?>/categorias"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
+        <a href="<?php echo site_url(); ?>/categorias_socios"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
         <br>
         <a href="<?php echo site_url(); ?>/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu">¿Quién administra los recursos?</li></a>
         <br>

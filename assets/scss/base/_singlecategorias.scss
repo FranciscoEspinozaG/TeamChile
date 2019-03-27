@@ -7,3 +7,43 @@
     padding-top: 160px;
     padding-bottom: 70px;
 }
+
+.titulo-detalle{
+    font-size: 1.3em;
+}
+
+.titulo-detalle-rojo{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: red;
+    font-weight: bolder;
+}
+
+.titulo-detalle-personalizado{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.titulo-categoria{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.nombre-categoria{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: -60px;
+}
+
+.denominacion{
+    font-size: 2.3em;
+    text-transform: uppercase;
+    margin-top: -60px;
+}
+
+.monto-aporte{
+    font-size: 1.8em;
+    margin-top: -50px;
+}

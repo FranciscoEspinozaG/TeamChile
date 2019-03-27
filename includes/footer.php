@@ -35,7 +35,7 @@
               <br>
               <li><a href="<?php echo site_url(); ?>/#que-es-ser-socio">¿Qué es ser socio del Team?</a></li>
               <br>
-              <li><a href="<?php echo site_url(); ?>/categorias">Categorías y Beneficios</a></li>
+              <li><a href="<?php echo site_url(); ?>/categorias_socios">Categorías y Beneficios</a></li>
             </ul>
           </div>
           <div class="col-md-6">
