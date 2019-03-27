@@ -40,15 +40,35 @@ $home_loop = new WP_Query( $home_loop_args );
 </div>
 <!-- TERMINO DE DEPORTISTAS DESTACADOS -->
 <!-- CARRUCEL PARA DEPORTISTAS DESTACADOS -->
-<div class="container pt-3 pb-3 mt-5 destacar" style="position:relative;z-index:1;">
-
-<?php if ( $home_loop->have_posts() ) :?>
-    <?php while ($home_loop->have_posts()) : $home_loop->the_post(); ?>
-
-    <?php endwhile; wp_reset_postdata();?>
-  <?php endif; ?>
-
+<?php
+$deportistas = new WP_Query(array(
+'post_type' 		=> array('deportistas'),
+'posts_per_page'	=> 3,
+'post_status'		=> 'publish',
+'orderby' 			=> 'menu_order date',
+'order'   			=> 'DES',
+'offset'        => 1
+));
+if ( $deportistas->have_posts() ) : ?>
+<div class="container mt-3">
+	<div class="row d-flex justify-content-around" style="width:auto; overflow:hidden">
+		<?php while ( $deportistas->have_posts() ) : $deportistas->the_post();?>
+			<div class="row">
+				<div class="col-6">			
+					<a href="<?php the_permalink();?>">
+          <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
+          <?php if ( $foto_deportista ) { ?>
+            <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:150px; width:auto;" />
+          <?php } ?>
+            <p><?php the_field( 'nombre_y_apellido' );?></p>
+					</a>			
+				</div>				
+			</div>
+		<?php endwhile;?>
+	</div>
 </div>
+<?php endif;?>
+<?php wp_reset_postdata(); ?>
 <!-- TERMINO DE CARRUCEL PARA DEPORTISTAS DESTACADOS -->
 <!-- BOTON VER TODOS LOS DEPORTISTAS -->
 <div class="vc_btn3-container vc_btn3-center mt-3">
