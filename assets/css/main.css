@@ -420,6 +420,20 @@ footer a:hover {
   padding-top: 160px;
   padding-bottom: 70px; }
 
+.icono-selector {
+  cursor: pointer;
+  -webkit-transition: .6s ease all;
+  -o-transition: .6s ease all;
+  transition: .6s ease all; }
+
+.icono-selector:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: .2s ease all;
+  -o-transition: .2s ease all;
+  transition: .2s ease all; }
+
 .titulo-detalle {
   font-size: 1.3em; }
 
@@ -436,22 +450,32 @@ footer a:hover {
 
 .titulo-categoria {
   font-size: 2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: -35px; }
 
 .nombre-categoria {
   font-size: 3em;
   text-transform: uppercase;
   font-weight: bolder;
-  margin-top: -60px; }
+  margin: -10px 0px -20px 0px; }
 
 .denominacion {
   font-size: 2.3em;
   text-transform: uppercase;
-  margin-top: -60px; }
+  margin: -30px 0px; }
 
 .monto-aporte {
-  font-size: 1.8em;
-  margin-top: -50px; }
+  font-size: 1.5em;
+  margin: -5px 0px 0px 0px;
+  color: gray; }
+
+.detalle-categoria {
+  display: none;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .detalle-categoria.selected {
+    display: block; }
 
 body {
   color: #4D4D4D; }

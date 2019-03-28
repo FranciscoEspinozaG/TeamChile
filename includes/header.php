@@ -84,7 +84,7 @@
 </nav>
 <div id="menu-scroll" class="w-100 fixed-top esconde-menu-scroll p-1">
   <div class="d-flex justify-content-around row mr-auto ml-auto p-0 m-0">
-    <a href="<?php echo site_url();?>/#" class="m-auto">
+    <a href="<?php echo site_url();?>/#" class="m-auto d-none d-md-block">
       <div class=" row p-0 m-auto d-flex justify-content-center">
         <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-team.png" alt="" style="height:45px;width:auto;">
         <img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-coch.png" alt="" style="height:45px;width:auto;">

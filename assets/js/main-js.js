@@ -24,4 +24,15 @@ $(document).ready(function(){
         }   
     });
 
+
+    $('#contenedor-detalle-categoria > div:first-child').addClass('selected');
+    $('.js-selectores-ul .js-selectores-li').each(function(){
+
+        $(this).on('click', function(){
+            var selectorId = $(this).data('name');
+            $('.detalle-categoria.selected').removeClass('selected');
+            $('#contenedor-detalle-categoria').find('#' + selectorId ).addClass('selected');
+        });
+    });
+
 });
