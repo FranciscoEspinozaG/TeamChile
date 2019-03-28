@@ -470,6 +470,7 @@ footer a:hover {
   color: gray; }
 
 .detalle-categoria {
+  height: 100%;
   display: none;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
