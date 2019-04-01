@@ -36,6 +36,11 @@ if ( ! function_exists('b4st_enqueues') ) {
 
 		wp_enqueue_style( 'gutenberg-blocks', get_template_directory_uri() . '/assets/css/blocks.css' );
 
+		wp_register_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', true, '2.3.4');
+		wp_register_style('owl-carousel-theme', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css', true, '2.3.4');
+		wp_enqueue_style('owl-carousel-css');
+		wp_enqueue_style('owl-carousel-theme');
+
 		wp_register_style('b4st', get_template_directory_uri() . '/assets/css/main.css', false, null);
 		wp_enqueue_style('b4st');
 
@@ -49,6 +54,10 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_register_script('bootstrap-bundle', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js', false, '4.1.3', true);
 		wp_enqueue_script('bootstrap-bundle');
 		// (The Bootstrap JS bundle contains Popper JS.)
+
+		wp_register_script('owl-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', true, '2.3.4');
+		wp_enqueue_script('owl-carousel-js');
+
 
 		wp_register_script('b4st', get_template_directory_uri() . '/assets/js/b4st.js', false, null, true);
 		wp_enqueue_script('b4st');

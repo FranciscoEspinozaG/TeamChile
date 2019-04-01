@@ -90,14 +90,15 @@ if ( $categorias_socios->have_posts() ) : ?>
 </div>
   
 <div class="container">
-  <div class="row d-flex justify-content-around col-4 ml-auto mr-auto">
-    <div class="btn-primary col-6 p-2 d-flex center border-radius-5">
-      <a class="texto-blanco text-center m-auto" href="<?php echo site_url(); ?>/contacto">Sé parte del team</a>
+  <div class="row d-flex justify-content-around ml-auto mr-auto">
+    <div class="btn-primary p-3 d-flex center border-radius-5">
+      <a class="texto-blanco text-center m-auto" href="<?php echo site_url(); ?>/contacto">Sé parte del Team Chile <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+</a>
     </div>
   </div>
   <a href="callto:5692222222"><div class="d-flex justify content-around btn-primary texto-blanco p-3 col-6 ml-auto mr-auto mt-3 mb-5 border-radius-5">
-    <div class="col 2 text-center text-md-right align-self-center"><i class="fa fa-phone fa-3x fa-rotate-90" aria-hidden="true"></i></div>
-    <div class="col-6 text-center text-md-left"><p>Tienes dudas?<br>Ponte en contacto con nosotros</p></div>
+    <div class="m-1 text-center text-md-right align-self-center p-3"><i class="fa fa-phone fa-3x fa-rotate-90" aria-hidden="true"></i></div>
+    <div class="m-1 text-center"><p><strong style="font-weight:bolder;">¿Tienes dudas?</strong><br>Ponte en contacto con nosotros</p></div>
   </div></a>
 </div>
 

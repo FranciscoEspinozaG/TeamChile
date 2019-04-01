@@ -26,7 +26,7 @@
       <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;"></a>
     </div>
     <div class="align-items-center boton-menu m-auto">
-      <p class="mt-1 mb-0"><i class="fa fa-bars" aria-hidden="true"></i> MENU</p>
+      <p class="mt-1 mb-0"><i class="fa fa-bars" aria-hidden="true"></i> MENÚ</p>
     </div>
   </div>
 </div>
@@ -42,29 +42,21 @@
 
     <div class="collapse navbar-collapse row d-flex align-items-center ml-auto mr-auto col-8 " id="navbarDropdown" style="color:white;">
       <p class="boton-menu text-center w-100 mb-5">X Cerrar Menú</p>
-      <ul class="w-100 border-bottom ">
-        <a  href="<?php echo site_url(); ?>/#"><li class="boton-menu text-center btn-menu">Inicio</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/que-es-teamchile"><li class="boton-menu text-center btn-menu">¿Qué es Team Chile?</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/#que-es-ser-socio"><li class="boton-menu text-center btn-menu">¿Qué es ser socio del Team?</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/categorias_socios"><li class="boton-menu text-center btn-menu">Categorías y<br>Beneficios</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu">¿Quién administra los recursos?</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/#nuestros-sponsors"><li class="boton-menu text-center btn-menu">Sponsors</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/#instagram"><li class="boton-menu text-center btn-menu">Instagram</li></a>
-        <br>
-        <a href="<?php echo site_url(); ?>/contacto"><li class="boton-menu text-center btn-menu">Contacto</li></a>
-        <br>
+      <ul class="w-100 border-bottom">
+        <a href="<?php echo site_url(); ?>/#"><li class="boton-menu text-center btn-menu m-2">Inicio</li></a>
+        <a href="<?php echo site_url(); ?>/que-es-teamchile"><li class="boton-menu text-center btn-menu m-2">¿Qué es Team Chile?</li></a>
+        <a href="<?php echo site_url(); ?>/#que-es-ser-socio"><li class="boton-menu text-center btn-menu m-2">¿Qué es ser socio del Team Chile?</li></a>
+        <a href="<?php echo site_url(); ?>/categorias_socios"><li class="boton-menu text-center btn-menu m-2">Categorías de Socios</li></a>
+        <a href="<?php echo site_url(); ?>/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu m-2">¿Quién administra los recursos?</li></a>
+        <a href="<?php echo site_url(); ?>/#nuestros-sponsors"><li class="boton-menu text-center btn-menu m-2">Sponsors</li></a>
+        <a href="<?php echo site_url(); ?>/#instagram"><li class="boton-menu text-center btn-menu m-2">Instagram</li></a>
+        <a href="<?php echo site_url(); ?>/contacto"><li class="boton-menu text-center btn-menu m-2">Contacto</li></a>
       </ul>
       <div class="container d-flex justify-content-around">
         <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-fb.png" alt=""></a>
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-tw.png" alt=""></a>
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-in.png" alt=""></a>
-        <a href="https://www.facebook.com/teamchile/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-yt.png" alt=""></a>    
+        <a href="https://twitter.com/TeamChile_COCH" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-tw.png" alt=""></a>
+        <a href="https://www.instagram.com/teamchile_coch/" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-in.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCBDTU9lVrB9NZn2HwMUDp-w" target="_blank"><img class="icon-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/ico-bco-yt.png" alt=""></a>    
       </div>
       <?php
       //  wp_nav_menu( array(

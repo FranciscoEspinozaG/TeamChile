@@ -361,7 +361,28 @@ img {
   width: auto;
   height: 50px; }
 
-/*-------------BOTON PERSONALIZADO TEAMCHILE-------------*/
+/*-------------DETALLES DEL SLIDE PARA CATEGORIAS EN HOME-------------*/
+.titulo-categoria-home {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  margin-bottom: -30px; }
+
+.nombre-categoria-home {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: -10px 0px -10px 0px; }
+
+.denominacion-home {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: -30px 0px; }
+
+.monto-aporte-home {
+  font-size: 1em;
+  margin: -5px 0px 0px 0px;
+  color: gray; }
+
 :root {
   azul-footer: linear-gradient(to right, red, yellow); }
 

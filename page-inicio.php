@@ -8,8 +8,46 @@
     );
 $home_loop = new WP_Query( $home_loop_args );
 ?>
+
+<!-- CATEGORIAS -->
+<h1 class="nombre-categoria ml-auto mr-auto text-center mt-3 mb-3">Nuestras categorías de socios</h1>
+<?php
+$categorias_socios = new WP_Query(array(
+'post_type' 		=> array('categorias_socios'),
+'posts_per_page'	=> -1,
+'post_status'		=> 'publish',
+'orderby' 			=> 'menu_order date',
+'order'   			=> 'ASC',
+));
+if ( $categorias_socios->have_posts() ) : ?>
+<div class="w-100 p-2">
+  <div class="owl-carousel owl-theme">
+            <?php while ( $categorias_socios->have_posts() ) : $categorias_socios->the_post();?>			
+            <?php $icono_de_la_categoria = get_field( 'icono_de_la_categoria' ); ?>
+            <?php if ( $icono_de_la_categoria ) { ?>
+            <div class="js-selectores-li bg-light border-radius-5 m-1  pt-5" data-name="<?php the_field( 'nombre_de_la_categoria' ); ?>">
+              <p class="titulo-categoria-home text-center w-100"><?php the_field( 'titulo_categoria' ); ?></p>
+              <br>
+              <p class="nombre-categoria-home text-center"><?php the_field( 'nombre_de_la_categoria' ); ?></p>
+              <br>
+              <p class="denominacion-home text-center"><?php the_field( 'denominacion' ); ?></p>
+              <br>
+              <p class="monto-aporte-home text-center"><?php the_field( 'monto_de_aporte' ); ?></p>
+              <img class="ml-auto mr-auto" src="<?php echo $icono_de_la_categoria['url']; ?>" alt="<?php echo $icono_de_la_categoria['alt']; ?>" style="height:180px; width:auto;" />
+            </div> 
+      <?php } ?>
+      <?php endwhile;?>
+      <?php wp_reset_postdata(); ?>
+  </div>
+</div>    
+<?php endif; ?>
+<!--ACÁ VA SECCIÓN DE INSTRAGRAM -->
+
+<h1 class="nombre-categoria ml-auto mr-auto text-center mt-3 mb-3">Acá va instagram</h1>
+
+
 <!-- DEPORTISTAS DESTACADOS -->
-<div class="container pt-3 pb-3 mt-5" style="position:relative;z-index:1;">
+<div class="container p-3 mt-1" style="position:relative;z-index:1;">
 
 <?php if ( $home_loop->have_posts() ) :?>
     <?php while ($home_loop->have_posts()) : $home_loop->the_post(); ?>
@@ -28,7 +66,7 @@ $home_loop = new WP_Query( $home_loop_args );
       <div class="w-100">
           <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
             <?php if ( $foto_deportista ) { ?>
-	            <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:300px; width:auto;" />
+	            <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:auto; width:100%;" />
             <?php } ?>
       </div>
     </a>
@@ -50,7 +88,7 @@ $deportistas = new WP_Query(array(
 'offset'        => 1
 ));
 if ( $deportistas->have_posts() ) : ?>
-<div class="container mt-3">
+<div class="container mt-1">
 	<div class="row d-flex justify-content-around" style="width:auto; overflow:hidden">
 		<?php while ( $deportistas->have_posts() ) : $deportistas->the_post();?>
 			<div class="row">
@@ -58,7 +96,7 @@ if ( $deportistas->have_posts() ) : ?>
 					<a href="<?php the_permalink();?>">
           <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
           <?php if ( $foto_deportista ) { ?>
-            <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php echo $foto_deportista['alt']; ?>" style="height:150px; width:auto;" />
+            <img src="<?php echo $foto_deportista['url']; ?>" alt="<?php the_field( 'nombre_y_apellido' );?>" style="height:150px; width:auto;" />
           <?php } ?>
             <p><?php the_field( 'nombre_y_apellido' );?></p>
 					</a>			
