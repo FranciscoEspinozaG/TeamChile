@@ -35,19 +35,45 @@ $(document).ready(function(){
         });
     });
 
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel-podios").owlCarousel({
         loop:true,
+        nav:false,
+        dots:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         responsive:{
             0:{
-                items:2
+                items:1
             },
             600:{
-                items:3
+                items:1
             },
             1000:{
-                items:5
+                items:3
             }
         }
     })
+
+    $(".owl-carousel-desportistas").owlCarousel({
+        loop:false,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:2,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:2,
+            }
+        }
+    });
 
 });

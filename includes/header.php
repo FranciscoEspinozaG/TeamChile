@@ -16,12 +16,21 @@
     <div class="d-none d-lg-flex justify-content-center ml-auto mr-auto">
       <a href="<?php echo site_url(); ?>/#"><img id="banderin-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/banderini-23.png" alt=""></a>
     </div>
-    <div class="d-none d-lg-flex justify-content-around mr-1 row" style="margin-left:13%; width:30%; max-whidth:400px;">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/pf-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/jumbo-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/13-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
-      <img src="<?php bloginfo('template_directory'); ?>/assets/img/sparta-bco.png" alt="" style="height:60px; width:auto;" class="m-1">
+    <?php
+      $auspiciadores = new WP_Query(array(
+        'post_type' 		=> 'auspiciadores',
+        'posts_per_page'	=> -1
+      ));
+      if ( $auspiciadores->have_posts() ) : ?>
+    <div class="d-none d-lg-flex justify-content-around mr-1 row w-auto" style="margin-left:10%; width:30%; max-whidth:550px; min-width:500px;">
+    <?php while ( $auspiciadores->have_posts() ) : $auspiciadores->the_post();?>
+          <?php $logo_blanco = get_field( 'logo_blanco' ); ?>
+          <?php if ( $logo_blanco ) { ?>
+	          <a target="blank" href="<?php the_field( 'web_auspiciador' ); ?>"><img class="icono-sponsor-blanco" src="<?php echo $logo_blanco['url']; ?>" alt="<?php echo $logo_blanco['alt']; ?>" /></a>
+          <?php } ?>
+          <?php endwhile; wp_reset_postdata(); ?>
     </div>
+<?php endif; ?>
     <div class="d-flex align-items-center justify-content-center m-auto">
       <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;"></a>
     </div>

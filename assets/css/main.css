@@ -312,7 +312,7 @@ img {
 .titulo-blanco-bolder {
   color: white;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.3em;
   font-weight: bolder;
   margin-top: -50px;
   margin-bottom: 0px;
@@ -333,7 +333,7 @@ img {
   line-height: 40px; }
 
 .titulo-rojo {
-  font-size: 4.3em;
+  font-size: 3.5em;
   color: red;
   text-transform: uppercase;
   font-weight: bolder;
@@ -351,15 +351,32 @@ img {
 
 /*---------------------SECCION A MANO EN HOME---------------------*/
 #nuestros-sponsors {
-  height: 90vh !important;
+  height: auto !important;
+  min-height: 60vh;
   background-image: url("../img/fondo-azul.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover; }
 
 .icono-sponsor {
   width: auto;
-  height: 50px; }
+  height: 90px;
+  -webkit-transition: .2s ease all;
+  -o-transition: .2s ease all;
+  transition: .2s ease all; }
+  .icono-sponsor-blanco {
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px; }
+
+.icono-sponsor:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: .2s ease all;
+  -o-transition: .2s ease all;
+  transition: .2s ease all; }
 
 /*-------------DETALLES DEL SLIDE PARA CATEGORIAS EN HOME-------------*/
 .titulo-categoria-home {
@@ -382,6 +399,22 @@ img {
   font-size: 1em;
   margin: -5px 0px 0px 0px;
   color: gray; }
+
+.js-selectores-li {
+  -webkit-transition: .3s ease-in-out all;
+  -o-transition: .3s ease-in-out all;
+  transition: .3s ease-in-out all; }
+
+.js-selectores-li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 100;
+  -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: .3s ease-in-out all;
+  -o-transition: .3s ease-in-out all;
+  transition: .3s ease-in-out all; }
 
 :root {
   azul-footer: linear-gradient(to right, red, yellow); }
@@ -416,7 +449,7 @@ footer a:hover {
   transition: .3s ease all; }
 
 .header-single-deportista {
-  height: 800px;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -431,6 +464,9 @@ footer a:hover {
   column-count: 2;
   -webkit-column-width: 300px;
   column-width: 300px; }
+
+.text-sm-archive {
+  font-size: calc(5vh + .1rem) !important; }
 
 #header-categorias {
   background-image: url("../img/fondo-categorias.png");
@@ -498,6 +534,18 @@ footer a:hover {
   transition: all 1s ease-in-out; }
   .detalle-categoria.selected {
     display: block; }
+
+.titulo-single-post {
+  line-height: 80px; }
+
+.titulo-single-post-sm {
+  font-size: 2rem; }
+
+.foto-noticia {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 70vh; }
 
 body {
   color: #4D4D4D; }

@@ -6,13 +6,13 @@
 <div id="header-categorias" class="">
   <div class="container">
     <div class="row">
-      <div class=" col-md-6">
+      <div class="col-12 col-xl-6">
         <p class="titulo-blanco-bolder salto-titulo text-right d-none d-md-block" style="margin-top:0px;">Todos</p>
-        <p class="titulo-blanco-bolder salto-titulo text-right d-md-none" style="font-size:3em;margin-bottom:-30px;">Todos</p>
+        <p class="titulo-blanco-bolder salto-titulo text-right text-sm-archive d-md-none" style="font-size:3em;margin-bottom:-30px;">Todos</p>
         <p class="titulo-blanco-thin salto-titulo text-right d-none d-md-block">los deportistas</p>
-        <p class="titulo-blanco-thin salto-titulo text-right d-md-none destacar" style="font-size:1px;">los deportistas</p>
+        <p class="titulo-blanco-thin salto-titulo text-right text-sm-archive d-md-none" style="font-size:.8px;">los deportistas</p>
       </div>
-      <div class=" col-md-6">
+      <div class="col-12 col-xl-6">
         <p class="texto-blanco text-left"></p>
       </div>
     </div>

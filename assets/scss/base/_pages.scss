@@ -187,7 +187,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
 .titulo-blanco-bolder{
     color: white;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.3em;
     font-weight: bolder;
     margin-top: -50px;
     margin-bottom: 0px;
@@ -211,7 +211,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
 }
 
 .titulo-rojo{
-    font-size: 4.3em;
+    font-size: 3.5em;
     color:red;
     text-transform: uppercase;
     font-weight: bolder;
@@ -231,19 +231,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
     border-radius: 5px;
 }
 
+
+
 /*---------------------SECCION A MANO EN HOME---------------------*/
 
 #nuestros-sponsors{
-    height: 90vh !important;
+    height: auto !important;
+    min-height: 60vh;
     background-image: fn-url('fondo-azul.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
 }
 
 .icono-sponsor{
     width: auto;
-    height: 50px;
+    height: 90px;
+    transition:.2s ease all;
+    &-blanco{
+        width: auto;
+        height: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.icono-sponsor:hover{
+    transform: scale(1.2);
+    transition:.2s ease all;
 }
 
 /*-------------DETALLES DEL SLIDE PARA CATEGORIAS EN HOME-------------*/
@@ -271,5 +286,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
     font-size: 1em;
     margin: -5px 0px 0px 0px;
     color: gray;
+}
+
+.js-selectores-li{
+    transition: .3s ease-in-out all;
+}
+
+.js-selectores-li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
+    transition: .3s ease-in-out all;
 }
 
