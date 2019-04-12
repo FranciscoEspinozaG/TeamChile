@@ -1,15 +1,34 @@
-
-.titulo-single-post{
-    line-height: 80px;
-}
-
-.titulo-single-post-sm{
-    font-size:2rem;
-}
-
-.foto-noticia{
+#header-noticias{
+    background-image: fn-url('header-noticias.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     height: 70vh;
+    padding-top: 160px;
+    padding-bottom: 70px;
+}
+
+.titulo-header{
+    font-size: calc(3vw + 1rem)!important;
+    text-transform: uppercase;
+    line-height: calc(3vw + 1rem);
+}
+
+.encabezado-noticia{
+    min-height: 400px;
+}
+
+.foto-single-noticias{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+.titulo-noticia-single{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+strong{
+    font-weight: bolder;
 }

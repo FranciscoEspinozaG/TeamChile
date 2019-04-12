@@ -1,0 +1,15 @@
+.foto-noticias-carousel{
+    min-height: 190px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.link-carousel:hover, .titulo-noticia:hover{
+    color: red;
+}
+
+.bajada-carousel{
+    font-weight: 600;
+    line-height: 20px;
+}

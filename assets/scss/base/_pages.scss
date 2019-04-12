@@ -218,6 +218,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
     line-height: 55px;
 }
 
+.thin{
+    font-weight: 200;
+}
+
+.bolder{
+    font-weight: bolder;
+    font-size: calc(3vw + 1rem);
+}
+
 .salto-titulo{
     word-break: normal;
     word-break: break-all;
@@ -288,14 +297,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0006', end
     color: gray;
 }
 
-.js-selectores-li{
-    transition: .3s ease-in-out all;
+.icono-en-header{
+    transition: .3s ease all;
 }
 
-.js-selectores-li:hover{
+.icono-en-header:hover{
     transform: scale(1.1);
-    z-index: 100;
+    z-index: 2;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
-    transition: .3s ease-in-out all;
+    transition: .3s ease all;
 }
 
+/*----------------SLIDE DEPORTISTAS----------------*/
+
+.foto-deportista{
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Feel free to change duration  */ 
+.animated  {
+  -webkit-animation-duration : 1000 ms  ;
+  animation-duration : 1000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.owl-animated-out {
+  z-index : 1 
+   }
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */ 
+.owl-animated-in {
+  z-index : 0 
+   }
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeOut  {
+  -webkit-animation-name : fadeOut  ;
+  animation-name : fadeOut  ;
+}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}

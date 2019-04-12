@@ -40,7 +40,7 @@ $(document).ready(function(){
         nav:false,
         dots:true,
         margin:10,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
         responsive:{
@@ -61,17 +61,40 @@ $(document).ready(function(){
         nav:false,
         dots:true,
         autoplay:true,
+        margin:10,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
+        animateOut: 'fadeOut',
         responsive:{
             0:{
-                items:2,
+                items:1,
             },
             600:{
                 items:2,
             },
             1000:{
+                items:3,
+            }
+        }
+    });
+
+    $(".owl-carousel-noticias").owlCarousel({
+        loop:false,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        margin:10,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
                 items:2,
+            },
+            1000:{
+                items:4,
             }
         }
     });

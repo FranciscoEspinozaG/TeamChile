@@ -108,6 +108,6 @@ if ( $categorias_socios->have_posts() ) : ?>
 <!-- Fin de section -->
 
 <?php
-    b4st_main_after();
+    //b4st_main_after();
     get_template_part('includes/footer');
 ?>

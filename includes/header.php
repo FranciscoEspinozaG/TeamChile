@@ -13,7 +13,7 @@
 
 <div id="barramenu" class="d-flex fixed-top ml-auto mr-auto ">
   <div class="row ml-auto mr-auto w-100 p-2">
-    <div class="d-none d-lg-flex justify-content-center ml-auto mr-auto">
+    <div class="d-none d-xl-flex justify-content-center ml-auto mr-auto">
       <a href="<?php echo site_url(); ?>/#"><img id="banderin-menu" src="<?php bloginfo('template_directory'); ?>/assets/img/banderini-23.png" alt=""></a>
     </div>
     <?php
@@ -22,7 +22,7 @@
         'posts_per_page'	=> -1
       ));
       if ( $auspiciadores->have_posts() ) : ?>
-    <div class="d-none d-lg-flex justify-content-around mr-1 row w-auto" style="margin-left:10%; width:30%; max-whidth:550px; min-width:500px;">
+    <div class="d-none d-xl-flex justify-content-around mr-1 row w-auto" style="margin-left:10%; width:30%; max-whidth:550px; min-width:500px;">
     <?php while ( $auspiciadores->have_posts() ) : $auspiciadores->the_post();?>
           <?php $logo_blanco = get_field( 'logo_blanco' ); ?>
           <?php if ( $logo_blanco ) { ?>
@@ -54,7 +54,7 @@
       <ul class="w-100 border-bottom">
         <a href="<?php echo site_url(); ?>/#"><li class="boton-menu text-center btn-menu m-2">Inicio</li></a>
         <a href="<?php echo site_url(); ?>/que-es-teamchile"><li class="boton-menu text-center btn-menu m-2">¿Qué es Team Chile?</li></a>
-        <a href="<?php echo site_url(); ?>/#que-es-ser-socio"><li class="boton-menu text-center btn-menu m-2">¿Qué es ser socio del Team Chile?</li></a>
+        <a href="<?php echo site_url(); ?>/que-es-ser-socio"><li class="boton-menu text-center btn-menu m-2">¿Qué es ser socio del Team Chile?</li></a>
         <a href="<?php echo site_url(); ?>/categorias_socios"><li class="boton-menu text-center btn-menu m-2">Categorías de Socios</li></a>
         <a href="<?php echo site_url(); ?>/quien-administra-los-recursos"><li class="boton-menu text-center btn-menu m-2">¿Quién administra los recursos?</li></a>
         <a href="<?php echo site_url(); ?>/#nuestros-sponsors"><li class="boton-menu text-center btn-menu m-2">Sponsors</li></a>
@@ -95,7 +95,7 @@
     <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-cta.png" alt="" style="height:45px;width:auto;"></a>
     </div>
     <div class=" boton-menu boton-menu-scroll align-items-center m-auto">
-      <p class="m-0"><i class="fa fa-bars" aria-hidden="true"></i> MENU</p>
+      <p class="m-0"><i class="fa fa-bars" aria-hidden="true"></i> MENÚ</p>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <?php
     get_template_part('includes/header'); 
-    b4st_main_before();
+    //b4st_main_before();
 ?>
 <!-- Header del single -->
 <div id="header-categorias" class="">
@@ -51,6 +51,6 @@ if ( $deportistas->have_posts() ) : ?>
 
 
 <?php 
-    b4st_main_after();
+    //b4st_main_after();
     get_template_part('includes/footer'); 
 ?>
