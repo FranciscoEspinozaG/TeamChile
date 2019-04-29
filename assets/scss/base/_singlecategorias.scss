@@ -8,6 +8,13 @@
     padding-bottom: 70px;
 }
 
+#instagram{
+    background-image: fn-url('fondo-categorias.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .icono-selector{
     cursor: pointer;
     transition: .6s ease all;
@@ -67,4 +74,11 @@
     &.selected{
         display: block;
     }
+}
+
+h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: red !important;
 }

@@ -27,7 +27,7 @@ if ( $categorias_socios->have_posts() ) : ?>
             <?php while ( $categorias_socios->have_posts() ) : $categorias_socios->the_post();?>			
             <?php $icono_de_la_categoria = get_field( 'icono_de_la_categoria' ); ?>
             <?php if ( $icono_de_la_categoria ) { ?>
-              <div class="js-selectores-li icono-en-header bg-light border-radius-5 pt-5 col-6 col-md-4 d-inline-block align-items-center" data-name="<?php the_field( 'nombre_de_la_categoria' ); ?>">
+              <div class="js-selectores-li icono-en-header bg-light border-radius-5 pt-5 col-12 col-md-4 d-inline-block align-items-center" data-name="<?php the_field( 'nombre_de_la_categoria' ); ?>">
                 <p class="titulo-categoria-home text-center w-100"><?php the_field( 'titulo_categoria' ); ?></p>
                 <br>
                 <p class="nombre-categoria-home text-center"><?php the_field( 'nombre_de_la_categoria' ); ?></p>
@@ -56,9 +56,16 @@ if ( $categorias_socios->have_posts() ) : ?>
 </div>
 
 <!--ACÁ VA SECCIÓN DE INSTRAGRAM -->
+<div id="instagram" class="w-100">
 
-<h1 class="nombre-categoria ml-auto mr-auto text-center mt-3 mb-3">Acá va instagram</h1>
-
+  <div class="container mt-5 mb-5">
+    
+    <h1 class="nombre-categoria ml-auto mr-auto text-center mt-4 mb-3">Nuestro instagram</h1>
+    <?php echo do_shortcode('[elfsight_instagram_feed id="1"]') ;?>
+    
+  </div>
+  
+</div>
 <?php
 $home_loop_args = array(
   'post_type' => 'deportistas',

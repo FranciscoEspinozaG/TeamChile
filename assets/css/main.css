@@ -586,6 +586,12 @@ footer a:hover {
   .detalle-categoria.selected {
     display: block; }
 
+h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: red !important; }
+
 #header-noticias {
   background-image: url("../img/header-noticias.png");
   background-repeat: no-repeat;
