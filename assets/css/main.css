@@ -528,6 +528,12 @@ footer a:hover {
   padding-top: 160px;
   padding-bottom: 70px; }
 
+#instagram {
+  background-image: url("../img/separador-rojo.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+
 .icono-selector {
   cursor: pointer;
   -webkit-transition: .6s ease all;

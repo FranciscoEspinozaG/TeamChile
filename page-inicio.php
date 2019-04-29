@@ -56,11 +56,11 @@ if ( $categorias_socios->have_posts() ) : ?>
 </div>
 
 <!--ACÁ VA SECCIÓN DE INSTRAGRAM -->
+<h1 class="nombre-categoria ml-auto mr-auto text-center mt-5 mb-3">Nuestro instagram</h1>
 <div id="instagram" class="w-100">
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-3 mb-5">
     
-    <h1 class="nombre-categoria ml-auto mr-auto text-center mt-4 mb-3">Nuestro instagram</h1>
     <?php echo do_shortcode('[elfsight_instagram_feed id="1"]') ;?>
     
   </div>
@@ -94,7 +94,7 @@ $home_loop = new WP_Query( $home_loop_args );
     <a href="<?php the_permalink();?>" class="col-md-6" style="overflow:hidden;">
       <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
         <?php if ( $foto_deportista ) { ?>
-        <div class="w-100 foto-deportista" style="background-image:url(<?php echo $foto_deportista['url']; ?>);min-height:100%;">
+        <div class="w-100 foto-deportista" style="background-image:url(<?php echo $foto_deportista['url']; ?>);min-height:200px;">
         </div>
       <?php } ?>
     </a>
@@ -103,6 +103,7 @@ $home_loop = new WP_Query( $home_loop_args );
   <?php endwhile; wp_reset_postdata();?>
   <?php endif; ?>
 
+  <hr>
 </div>
 <!-- TERMINO DE DEPORTISTAS DESTACADOS -->
 <!-- CARRUCEL PARA DEPORTISTAS DESTACADOS -->
