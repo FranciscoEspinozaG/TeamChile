@@ -96,10 +96,16 @@ if ( $categorias_socios->have_posts() ) : ?>
 </a>
     </div>
   </div>
-  <a href="callto:5692222222"><div class="d-flex justify content-around btn-primary texto-blanco p-3 col-6 ml-auto mr-auto mt-3 mb-5 border-radius-5">
-    <div class="m-1 text-center text-md-right align-self-center p-3"><i class="fa fa-phone fa-3x fa-rotate-90" aria-hidden="true"></i></div>
-    <div class="m-1 text-center"><p><strong style="font-weight:bolder;">¿Tienes dudas?</strong><br>Ponte en contacto con nosotros</p></div>
-  </div></a>
+  <a href="callto:5692222222">
+<div class="row justify content-around btn-primary texto-blanco p-3 col-12 col-md-6 ml-auto mr-auto mt-3 mb-5 border-radius-5">
+ <div class="m-1 text-center text-md-right align-self-center p-3 col-12 col-md-4 ml-auto mr-auto">
+  <i class="fa fa-phone fa-3x fa-rotate-90" aria-hidden="true"></i>
+ </div>
+    
+ <div class="m-1 text-center text-xl-left col-12 col-md-8 ml-auto mr-auto"><p><strong style="font-weight:bolder;">¿Tienes dudas?</strong><br>Ponte en contacto con nosotros<br>(56) 222 703 678</p>
+ </div>
+</div>
+</a> 
 </div>
 
 
