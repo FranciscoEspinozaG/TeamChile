@@ -54,26 +54,26 @@ $(document).ready(function(){
                 items:3
             }
         }
-    })
+    });
 
-    $(".owl-carousel-desportistas").owlCarousel({
-        loop:false,
+    $(".owl-carousel-sponsors").owlCarousel({
+        loop:true,
         nav:false,
         dots:true,
         autoplay:true,
-        margin:10,
+        margin:5,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
-        animateOut: 'fadeOut',
         responsive:{
             0:{
                 items:1,
+                nav:true,
             },
             600:{
                 items:2,
             },
             1000:{
-                items:3,
+                items:4,
             }
         }
     });
@@ -97,6 +97,85 @@ $(document).ready(function(){
                 items:4,
             }
         }
+    });
+
+    // Post.
+    var posts = $( '.post-coch-xl' );
+
+    // Loading.
+    posts.html( '<p>⌛️ Cargando...</p>' );
+
+    // Get JSON Data from API URI. 10 posts will be returned by default.
+    $.getJSON( 'https://coch.cl/wp-json/wp/v2/posts?per_page=1&categories=357', function( data ) {
+    		// Empty.
+            posts.empty();
+            //console.log(data);
+    
+    	// Loop through each post.
+    	 $.each( data, function( i, post ){
+    		// Log the post data.
+        
+    		// Post Link.
+    		const link = post.link;
+        
+    		// Post Title.
+    		const title = post.title.rendered;
+        
+    		// Post Excerpt.
+            const excerpt = post.excerpt.rendered;
+            
+            //url de la  imagen
+            const image = post.better_featured_image.media_details.file;
+            
+            console.log(image);
+            
+    		// Post Content.
+    		const content = post.content.rendered;
+            
+            // Building the HTML.
+    		posts.append( '<a target="_blank" class="w-100" href=' + link + ' >' + '<div class="w-100 row p-0 m-0">' + '<div class="col-12 col-md-6">' + '<h1 class="titulo-noticia-single text-center text-md-right ">' + title + '</h1>' + '<p class="titulo-noticia-single text-center text-xl-right w-100">' + excerpt + '</p>' + '</div>' + '<div class="col-12 col-md-6 foto-single-noticias" style="background-image:url(https://www.coch.cl/wp-content/uploads/' + image + ');background-position:center -10%;"/>' + '</div>' + '</div>' + '</a>' );
+            
+    	}); 
+
+    });
+
+    
+    // Post.
+    var postsDiv = $( '.posts-coch' );
+
+    // Loading.
+    postsDiv.html( '<p>⌛️ Cargando...</p>' );
+
+    // Get JSON Data from API URI. 10 posts will be returned by default.
+    $.getJSON( 'https://coch.cl/wp-json/wp/v2/posts?per_page=4&offset=1&categories=357', function( data ) {
+    		// Empty.
+    		postsDiv.empty();
+    
+    	// Loop through each post.
+    	$.each( data, function( i, post ){
+    		// Log the post data.
+        
+    		// Post Link.
+    		const link = post.link;
+        
+    		// Post Title.
+    		const title = post.title.rendered;
+        
+    		// Post Excerpt.
+            //const excerpt = post.excerpt.rendered;
+            
+            //url de la  imagen
+            const image = post.better_featured_image.media_details.file;
+
+            console.log(image);
+        
+    		// Post Content.
+    		const content = post.content.rendered;
+        
+    		// Building the HTML. 
+    		postsDiv.append( '<a target="_blank" class="col-6 col-md-3" href=' + link + ' >' + '<div class="w-100"><img class="w-100" src="https://www.coch.cl/wp-content/uploads/' + image + '"/>' + title + '</div>' + '</a>' );
+    	});
+
     });
 
 });

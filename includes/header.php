@@ -32,7 +32,7 @@
     </div>
 <?php endif; ?>
     <div class="d-flex align-items-center justify-content-center m-auto">
-      <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;"></a>
+      <a href="<?php echo site_url();?>/hazte-socio"><img src="<?php bloginfo('template_directory'); ?>/assets/img/cta-team.gif" alt="" style="height:30px; width:auto;"></a>
     </div>
     <div class="align-items-center boton-menu m-auto">
       <p class="mt-1 mb-0"><i class="fa fa-bars" aria-hidden="true"></i> MENÚ</p>
@@ -92,7 +92,7 @@
       </div>
     </a>
     <div class="m-auto">
-    <a href="<?php echo site_url();?>/contacto"><img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-cta.png" alt="" style="height:45px;width:auto;"></a>
+    <a href="<?php echo site_url();?>/hazte-socio"><img src="<?php bloginfo('template_directory'); ?>/assets/img/menu-scroll-cta.png" alt="" style="height:45px;width:auto;"></a>
     </div>
     <div class=" boton-menu boton-menu-scroll align-items-center m-auto">
       <p class="m-0"><i class="fa fa-bars" aria-hidden="true"></i> MENÚ</p>

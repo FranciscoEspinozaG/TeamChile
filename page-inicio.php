@@ -73,84 +73,14 @@ $home_loop_args = array(
 );
 $home_loop = new WP_Query( $home_loop_args );
 ?>
-<!-- DEPORTISTAS DESTACADOS -->
-<div class="container p-3 mt-1" style="position:relative;z-index:1;">
-
-<?php if ( $home_loop->have_posts() ) :?>
-    <?php while ($home_loop->have_posts()) : $home_loop->the_post(); ?>
-    <article class="row  text-center text-md-right">
-      <div class="col-md-6">
-        <div class="w-100 text-center text-md-right">
-          <p class="titulo-azul text-center text-md-right" style="margin-bottom:-5px;">Deportistas</p>
-          <p class="titulo-rojo salto-titulo text-center text-md-right" style="margin-bottom:-5px;">Destacados</p>
-        </div>
-      <a href="<?php the_permalink();?>">
-        <p class="titulo-noticias-deportistas-gris"> <?php the_title()?> </p>
-      </a>
-      <a href="<?php the_permalink();?>">
-        <p><?php the_field( 'extracto' ); ?>...</p>
-      </a>
-    </div>
-    <a href="<?php the_permalink();?>" class="col-md-6" style="overflow:hidden;">
-      <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
-        <?php if ( $foto_deportista ) { ?>
-        <div class="w-100 foto-deportista" style="background-image:url(<?php echo $foto_deportista['url']; ?>);min-height:200px;">
-        </div>
-      <?php } ?>
-    </a>
-     
-    </article>    
-  <?php endwhile; wp_reset_postdata();?>
-  <?php endif; ?>
-
-  <hr>
-</div>
-<!-- TERMINO DE DEPORTISTAS DESTACADOS -->
-<!-- CARRUCEL PARA DEPORTISTAS DESTACADOS -->
-<?php
-$deportistas = new WP_Query(array(
-'post_type' 		=> array('deportistas'),
-'posts_per_page'	=> 6,
-'post_status'		=> 'publish',
-'orderby' 			=> 'menu_order date',
-'order'   			=> 'DES',
-'offset'        => 1
-));
-if ( $deportistas->have_posts() ) : ?>
-<div class="container mt-0">
-	<div class="row d-flex justify-content-around owl-carousel-desportistas owl-carousel owl-theme ml-auto mr-auto" style="width:auto; overflow:hidden">
-		<?php while ( $deportistas->have_posts() ) : $deportistas->the_post();?>
-			<div class="row p-3">
-        <a class="w-100" href="<?php the_permalink();?>">
-            <?php $foto_deportista = get_field( 'foto_deportista' ); ?>
-            <?php if ( $foto_deportista ) { ?>
-              <div class="w-100 foto-deportista" style="background-image:url(<?php echo $foto_deportista['url']; ?>);">			
-              </div>				
-            <?php } ?>
-            <p><?php the_field( 'nombre_y_apellido' );?></p>
-					</a>			
-			</div>
-		<?php endwhile;?>
-	</div>
-</div>
-<?php endif;?>
-<?php wp_reset_postdata(); ?>
-<!-- TERMINO DE CARRUCEL PARA DEPORTISTAS DESTACADOS -->
-<!-- BOTON VER TODOS LOS DEPORTISTAS -->
-
-<div class="row d-flex justify-content-around ml-auto mr-auto">
-  <div class="btn-primary p-3 d-flex center border-radius-5">
-    <a class="texto-blanco text-center m-auto" href="<?php echo site_url(); ?>/deportistas">Ver todos los deportistas <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-    </a>
-  </div>
-</div>
+<!-- FIN DE INSTAGRAM -->
+<!-- ACÁ VAN LAS NOTICIAS -->
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 <div class="container">
   <div class="row">
     <div class="col">
       <?php the_content();?>
-
     </div>
   </div>
 </div>
@@ -159,7 +89,7 @@ wp_reset_postdata();
 endif;
 ?>
 <?php
-$entradas = new WP_Query(array(
+/*$entradas = new WP_Query(array(
 'post_type' 		=> 'post',
 'posts_per_page'	=> 1,
 'post_status'		=> 'publish',
@@ -186,12 +116,22 @@ if ( $entradas->have_posts() ) : ?>
     </div><!-- /.row -->
   </main><!-- /.container -->
 <?php endwhile; wp_reset_postdata();?>
-<?php endif; ?>
+<?php endif; */?>
+<!-- NOTICIAS DESDE COCH -->
+<div class="container mt-5 post-coch-xl">
+</div>
+
+<hr class="container">
+
+<div class="container mt-5">
+  <div class="row posts-coch">
+  </div>
+</div>
 
 <?php
-$entradas = new WP_Query(array(
+/*$entradas = new WP_Query(array(
 'post_type' 		=> 'post',
-'posts_per_page'	=> 99999,
+'posts_per_page'	=> -1,
 'post_status'		=> 'publish',
 'orderby' 			=> 'menu_order date',
 'order'   			=> 'DES',
@@ -216,15 +156,16 @@ if ( $entradas->have_posts() ) : ?>
     <?php endwhile; ?>
   </div>
 </div>
-<?php endif; ?>
+<?php endif; */?>
 <!-- BOTON VER TODAS LAS NOTICIAS -->
 
 <div class="row d-flex justify-content-around ml-auto mr-auto">
   <div class="btn-primary p-3 d-flex center border-radius-5">
-    <a class="texto-blanco text-center m-auto" href="<?php echo site_url(); ?>/noticias">Ver todas las noticias <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+    <a class="texto-blanco text-center m-auto" target="_balnk" href="https://www.coch.cl/noticias-coch/">Ver todas las noticias <i class="fa fa-angle-double-right" aria-hidden="true"></i>
     </a>
   </div>
 </div>
+<!-- ACÁ TERMINAN LAS NOTICIAS -->
 
 <!-- AUSPICIADORES -->
 <?php
@@ -239,11 +180,11 @@ if ( $auspiciadores->have_posts() ) : ?>
           <p class="titulo-blanco-thin">Nuestros</p>
           <p class="titulo-blanco-bolder">Sponsors</p>
         </div>
-        <div class="w-100 bg-light border-radius-5 row p-3 justify-content-around">
-        <?php while ( $auspiciadores->have_posts() ) : $auspiciadores->the_post();?>
-          <?php $logo_color = get_field( 'logo_color' ); ?>
-          <?php if ( $logo_color ) { ?>
-	          <a target="blank" href="<?php the_field( 'web_auspiciador' ); ?>"><img class="icono-sponsor" src="<?php echo $logo_color['url']; ?>" alt="<?php echo $logo_color['alt']; ?>" /></a>
+        <div class="bg-light border-radius-5 pt-4 pb-4 owl-carousel-sponsors owl-carousel owl-theme">
+          <?php while ( $auspiciadores->have_posts() ) : $auspiciadores->the_post();?>
+            <?php $logo_color = get_field( 'logo_color' ); ?>
+            <?php if ( $logo_color ) { ?>
+	            <a target="blank" class="text-center p-2" href="<?php the_field( 'web_auspiciador' ); ?>"><img class="icono-sponsor" src="<?php echo $logo_color['url']; ?>" alt="<?php echo $logo_color['alt']; ?>" /></a>
           <?php } ?>
           <?php endwhile; wp_reset_postdata(); ?>       
         </div>
