@@ -363,18 +363,19 @@ img {
   background-image: url("../img/fondo-azul.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .icono-sponsor {
-  width: auto !important;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  height: 90px;
   -webkit-transition: .2s ease all;
   -o-transition: .2s ease all;
-  transition: .2s ease all;
-}
+  transition: .2s ease all; }
+  .icono-sponsor-blanco {
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px; }
 
 .icono-sponsor:hover {
   -webkit-transform: scale(1.2);
@@ -382,16 +383,7 @@ img {
   transform: scale(1.2);
   -webkit-transition: .2s ease all;
   -o-transition: .2s ease all;
-  transition: .2s ease all;
-  z-index: 100;
-}
-
-.icono-sponsor-blanco {
-  width: auto;
-  height: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  transition: .2s ease all; }
 
 /*-------------DETALLES DEL SLIDE PARA CATEGORIAS EN HOME-------------*/
 .titulo-categoria-home {

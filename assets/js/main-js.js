@@ -133,7 +133,7 @@ $(document).ready(function(){
     		const content = post.content.rendered;
             
             // Building the HTML.
-    		posts.append( '<a target="_blank" class="w-100" href=' + link + ' >' + '<div class="w-100 row p-0 m-0">' + '<div class="col-12 col-md-6">' + '<h1 class="titulo-noticia-single text-center text-md-right ">' + title + '</h1>' + '<p class="titulo-noticia-single text-center text-xl-right w-100">' + excerpt + '</p>' + '</div>' + '<div class="col-12 col-md-6 foto-single-noticias" style="background-image:url(https://www.coch.cl/wp-content/uploads/' + image + ');background-position:center -10%;"/>' + '</div>' + '</div>' + '</a>' );
+    		posts.append( '<a target="_blank" class="w-100" href=' + link + ' >' + '<div class="w-100 row p-0 m-0">' + '<div id="textos-noticias" class="col-12 col-md-6">' + '<h1 class="titulo-noticia-single text-center text-md-right ">' + title + '</h1>' + excerpt + '</div>' + '<div class="col-12 col-md-6 foto-single-noticias" style="background-image:url(https://www.coch.cl/wp-content/uploads/' + image + ');background-position:center -10%;"/>' + '</div>' + '</div>' + '</a>' );
             
     	}); 
 
@@ -177,5 +177,10 @@ $(document).ready(function(){
     	});
 
     });
+    
+    var textoNoticia = $('#textos-noticias > p');
+
+    $(textoNoticia).addClass('text-right');
+    console.log(textoNoticia);
 
 });
