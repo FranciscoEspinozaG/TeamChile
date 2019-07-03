@@ -61,7 +61,7 @@ $(document).ready(function(){
         nav:false,
         dots:true,
         autoplay:true,
-        margin:5,
+        margin:30,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         responsive:{
@@ -137,7 +137,10 @@ $(document).ready(function(){
             
     	}); 
 
-    });
+    })
+    .done(function() {   
+        $('#textos-noticias p').addClass('text-center text-xl-right');
+    }); 
 
     
     // Post.
@@ -162,7 +165,7 @@ $(document).ready(function(){
     		const title = post.title.rendered;
         
     		// Post Excerpt.
-            //const excerpt = post.excerpt.rendered;
+            const excerpt = post.excerpt.rendered;
             
             //url de la  imagen
             const image = post.better_featured_image.media_details.file;
@@ -173,14 +176,9 @@ $(document).ready(function(){
     		const content = post.content.rendered;
         
     		// Building the HTML. 
-    		postsDiv.append( '<a target="_blank" class="col-6 col-md-3" href=' + link + ' >' + '<div class="w-100"><img class="w-100" src="https://www.coch.cl/wp-content/uploads/' + image + '"/>' + title + '</div>' + '</a>' );
+    		postsDiv.append( '<a target="_blank" class="col-6 col-md-3 mb-5" href=' + link + ' >' + '<div class="w-100"><img class="w-100" src="https://www.coch.cl/wp-content/uploads/' + image + '"/>' + '<p class="text-center mt-2 mb-2" style="line-height:20px;">' + title + '</p>' + '</div>' + '</a>' );
     	});
 
-    });
-    
-    var textoNoticia = $('#textos-noticias > p');
-
-    $(textoNoticia).addClass('text-right');
-    console.log(textoNoticia);
+    }); 
 
 });

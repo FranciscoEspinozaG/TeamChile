@@ -363,27 +363,37 @@ img {
   background-image: url("../img/fondo-azul.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover; }
+  background-size: cover;
+}
+
+.owl-carousel .owl-item img{
+  width: auto !important;
+  margin: auto;
+}
 
 .icono-sponsor {
-  width: auto;
+  width: auto !important;
   height: 90px;
   -webkit-transition: .2s ease all;
   -o-transition: .2s ease all;
-  transition: .2s ease all; }
+  transition: .2s ease all;
+  }
+
+  .icono-sponsor:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: .2s ease all;
+    -o-transition: .2s ease all;
+    transition: .2s ease all;
+  }
+
   .icono-sponsor-blanco {
     width: auto;
     height: 60px;
     margin-left: 10px;
-    margin-right: 10px; }
-
-.icono-sponsor:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: .2s ease all;
-  -o-transition: .2s ease all;
-  transition: .2s ease all; }
+    margin-right: 10px;
+    }
 
 /*-------------DETALLES DEL SLIDE PARA CATEGORIAS EN HOME-------------*/
 .titulo-categoria-home {
