@@ -106,7 +106,7 @@ $(document).ready(function(){
     posts.html( '<p>⌛️ Cargando...</p>' );
 
     // Get JSON Data from API URI. 10 posts will be returned by default.
-    $.getJSON( 'https://coch.cl/wp-json/wp/v2/posts?per_page=1&categories=357', function( data ) {
+    $.getJSON( 'https://coch.cl/wp-json/wp/v2/posts?per_page=1&categories=529', function( data ) {
     		// Empty.
             posts.empty();
             //console.log(data);
@@ -150,7 +150,7 @@ $(document).ready(function(){
     postsDiv.html( '<p>⌛️ Cargando...</p>' );
 
     // Get JSON Data from API URI. 10 posts will be returned by default.
-    $.getJSON( 'https://coch.cl/wp-json/wp/v2/posts?per_page=4&offset=1&categories=357', function( data ) {
+    $.getJSON( 'https://coch.cl/wp-json/wp/v2/posts?per_page=4&offset=1&categories=529', function( data ) {
     		// Empty.
     		postsDiv.empty();
     
